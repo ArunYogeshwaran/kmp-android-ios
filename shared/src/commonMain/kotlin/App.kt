@@ -19,11 +19,11 @@ import org.jetbrains.compose.resources.painterResource
 @Composable
 fun App() {
     MaterialTheme {
-        var greetingText by remember { mutableStateOf("Hello, World!") }
+        var greetingText by remember { mutableStateOf("Hello, ${getPlatformName()}!") }
         var showImage by remember { mutableStateOf(false) }
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Button(onClick = {
-                greetingText = "Hello, ${getPlatformName()}"
+                greetingText = "Hello Zenjob by ${getPlatformName()}"
                 showImage = !showImage
             }) {
                 Text(greetingText)
