@@ -23,6 +23,8 @@ pluginManagement {
         id("com.android.library").version(agpVersion)
 
         id("org.jetbrains.compose").version(composeVersion)
+
+        id("io.ktor.plugin").version("2.3.5")
     }
 }
 
